@@ -146,6 +146,9 @@ BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
+# LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 
