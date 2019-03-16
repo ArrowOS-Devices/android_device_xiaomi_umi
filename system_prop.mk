@@ -22,6 +22,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.cpurend.vsync=false \
     debug.sf.disable_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.enable_hwc_vds=1
