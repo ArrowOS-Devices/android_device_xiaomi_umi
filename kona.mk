@@ -23,6 +23,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+-include $(LOCAL_PATH)/system_prop.mk
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -40,6 +42,10 @@ AB_OTA_UPDATER := false
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     tinymix
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbluetooth_qti
 
 # fastbootd
 PRODUCT_PACKAGES += \
