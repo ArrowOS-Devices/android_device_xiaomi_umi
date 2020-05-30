@@ -29,3 +29,8 @@ AB_OTA_UPDATER := false
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_BUILD_PRODUCT_IMAGE := true
