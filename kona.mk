@@ -20,6 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 
