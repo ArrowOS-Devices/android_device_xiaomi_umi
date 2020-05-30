@@ -20,6 +20,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 29
+
 # A/B
 AB_OTA_UPDATER := false
 
