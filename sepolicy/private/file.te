@@ -1,0 +1,2 @@
+# sysfs
+type sysfs_oem_wireless, fs_type, sysfs_type;
