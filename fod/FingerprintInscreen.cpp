@@ -33,8 +33,6 @@
 #define FOD_SENSOR_Y 1808
 #define FOD_SENSOR_SIZE 197
 
-#define BRIGHTNESS_PATH "/sys/class/backlight/panel0-backlight/brightness_clone"
-
 namespace vendor {
 namespace pa {
 namespace biometrics {
@@ -50,12 +48,6 @@ static T get(const std::string& path, const T& def) {
 
     file >> result;
     return file.fail() ? def : result;
-}
-
-template <typename T>
-static void set(const std::string& path, const T& value) {
-    std::ofstream file(path);
-    file << value;
 }
 
 FingerprintInscreen::FingerprintInscreen() {
@@ -85,13 +77,11 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
 }
