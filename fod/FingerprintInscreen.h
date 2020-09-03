@@ -20,6 +20,7 @@
 #include <vendor/pa/biometrics/fingerprint/inscreen/1.0/IFingerprintInscreen.h>
 #include <vendor/xiaomi/hardware/displayfeature/1.0/IDisplayFeature.h>
 #include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
+#include <vendor/xiaomi/hardware/touchfeature/1.0/ITouchFeature.h>
 
 namespace vendor {
 namespace pa {
@@ -34,6 +35,7 @@ using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::vendor::xiaomi::hardware::displayfeature::V1_0::IDisplayFeature;
 using ::vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint;
+using ::vendor::xiaomi::hardware::touchfeature::V1_0::ITouchFeature;
 
 class FingerprintInscreen : public IFingerprintInscreen {
   public:
@@ -55,6 +57,7 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<void> setCallback(const sp<IFingerprintInscreenCallback>& callback) override;
 
   private:
+    sp<ITouchFeature> TouchFeatureService;
     sp<IDisplayFeature> xiaomiDisplayFeatureService;
     sp<IXiaomiFingerprint> xiaomiFingerprintService;
 };
