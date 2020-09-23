@@ -134,5 +134,8 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 BUILD_WITHOUT_VENDOR := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # VNDK
 BOARD_VNDK_VERSION := current
