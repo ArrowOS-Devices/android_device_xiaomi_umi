@@ -22,7 +22,7 @@
 #
 
 TARGET_BOARD_PLATFORM := kona
-DEVICE_PATH := device/xiaomi/umi
+DEVICE_PATH := device/xiaomi/cmi
 
 # Architecture
 TARGET_ARCH := arm64
@@ -43,7 +43,7 @@ TARGET_USES_64_BIT_BINDER := true
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := umi
+TARGET_OTA_ASSERT_DEVICE := cmi
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1

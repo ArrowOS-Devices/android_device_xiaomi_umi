@@ -69,7 +69,7 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/umi
+    device/xiaomi/cmi
 
 # Net
 PRODUCT_PACKAGES += \
