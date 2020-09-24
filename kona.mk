@@ -59,6 +59,11 @@ PRODUCT_PACKAGES += \
     XiaomiFrameworks \
     XiaomiSystemUI
 
+# Overlays - override vendor ones
+PRODUCT_PACKAGES += \
+    FrameworksResCommon \
+    FrameworksResTarget
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
