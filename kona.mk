@@ -83,6 +83,10 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     FrameworksResTarget
 
+# Paranoid Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false

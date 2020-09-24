@@ -16,6 +16,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Paranoid Doze
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.sensor.pickup=xiaomi.sensor.pickup \
+    ro.sensor.proximity=true
+
 # Radio
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.telephony.default_network=22,22
