@@ -57,6 +57,14 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    NfcNci \
+    Tag \
+    SecureElement
+
 # Overlays
 PRODUCT_PACKAGES += \
     XiaomiBluetooth \
