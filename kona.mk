@@ -53,6 +53,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/umi
 
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # Overlays
 PRODUCT_PACKAGES += \
     XiaomiBluetooth \
