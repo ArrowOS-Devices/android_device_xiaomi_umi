@@ -32,6 +32,11 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 # A/B
 AB_OTA_UPDATER := false
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    tinymix
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
