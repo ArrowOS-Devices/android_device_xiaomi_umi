@@ -47,6 +47,9 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     tinymix
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_volumes.xml
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbluetooth_qti
