@@ -128,4 +128,5 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.qcom.rc \
     init.recovery.qcom.rc
