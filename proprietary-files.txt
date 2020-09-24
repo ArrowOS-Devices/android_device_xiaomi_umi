@@ -1,3 +1,7 @@
+# Audio
+vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so
+vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/29/lib/soundfx/libvolumelistener.so
+
 # Display postprocessing
 product/lib64/libsdm-disp-apis.qti.so
 product/lib64/vendor.display.color@1.0.so
