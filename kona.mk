@@ -29,6 +29,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-pa
+
 # A/B
 AB_OTA_UPDATER := false
 
@@ -48,6 +52,12 @@ PRODUCT_COPY_FILES += \
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/umi
+
+# Overlays
+PRODUCT_PACKAGES += \
+    XiaomiBluetooth \
+    XiaomiFrameworks \
+    XiaomiSystemUI
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
