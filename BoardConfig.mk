@@ -21,7 +21,6 @@
 # definition file).
 #
 
-TARGET_BOARD_PLATFORM := kona
 DEVICE_PATH := device/xiaomi/cmi
 
 # Architecture
