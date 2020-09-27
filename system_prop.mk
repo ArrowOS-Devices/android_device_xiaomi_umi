@@ -23,6 +23,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.settings.xml=/system/etc/media_profiles_vendor.xml
+
 # Paranoid Doze
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.sensor.pickup=xiaomi.sensor.pickup \
