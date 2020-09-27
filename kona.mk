@@ -63,11 +63,11 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    pa.biometrics.fingerprint.inscreen@1.0-service.kona
+#PRODUCT_PACKAGES += \
+#    pa.biometrics.fingerprint.inscreen@1.0-service.kona
 
-PRODUCT_COPY_FILES += \
-   vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
+#PRODUCT_COPY_FILES += \
+#   vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
 
 # Fstab
 PRODUCT_COPY_FILES += \
