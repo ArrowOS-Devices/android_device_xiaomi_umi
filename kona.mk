@@ -154,6 +154,10 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc
 
+# Ril
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
