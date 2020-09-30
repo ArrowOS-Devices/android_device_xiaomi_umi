@@ -44,7 +44,7 @@ TARGET_BOARD_PLATFORM := kona
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-pa
+    $(LOCAL_PATH)/overlay-aosp
 
 # A/B
 AB_OTA_UPDATER := false
@@ -73,11 +73,8 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-#PRODUCT_PACKAGES += \
-#    pa.biometrics.fingerprint.inscreen@1.0-service.kona
-
-#PRODUCT_COPY_FILES += \
-#   vendor/pa/config/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.pa.biometrics.fingerprint.inscreen.xml
+PRODUCT_PACKAGES += \
+    lineage.biometrics.fingerprint.inscreen@1.0-service.kona
 
 # Fstab
 PRODUCT_COPY_FILES += \
@@ -120,10 +117,6 @@ PRODUCT_PACKAGES += \
     DevicesOverlay \
     DevicesAndroidOverlay
 
-# Paranoid Doze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -139,15 +132,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml
-
-# QTI common
-TARGET_COMMON_QTI_COMPONENTS := \
-    audio \
-    av \
-    bt \
-    display \
-    perf \
-    wfd
 
 # Ramdisk
 PRODUCT_PACKAGES += \

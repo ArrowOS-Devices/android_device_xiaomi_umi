@@ -20,11 +20,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.settings.xml=/system/etc/media_profiles_vendor.xml
 
-# Paranoid Doze
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.sensor.pickup=xiaomi.sensor.pickup \
-    ro.sensor.proximity=true
-
 # Radio
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.telephony.default_network=22,22
