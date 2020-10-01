@@ -1,4 +1,4 @@
-Copyright (C) 2020 Paranoid Android
+Copyright (C) 2020 The PixelExperience Project
 
 Device configuration for Xiaomi MI 10 Pro
 =========================================
