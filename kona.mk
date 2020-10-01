@@ -168,6 +168,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Wallpapers
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt
+
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
