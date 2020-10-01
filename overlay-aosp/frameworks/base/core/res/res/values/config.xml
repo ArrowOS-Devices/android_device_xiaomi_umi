@@ -26,4 +26,7 @@
          specified -->
     <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers19/com.breel.wallpapers19.doodle.wallpaper.variations.DoodleWallpaperV1</string>
 
+    <!-- Display has physical cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
+
 </resources>
