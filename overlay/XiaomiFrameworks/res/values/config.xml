@@ -225,6 +225,11 @@
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
      <bool name="config_wifi_dual_band_support">true</bool>
+     <bool name="config_wifi_dual_sap_mode_enabled">true</bool>
+     <bool name="config_wifi_softap_ieee80211ac_supported">true</bool>
+
+    <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
+     <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
 
     <!-- Indicates that connected MAC randomization is supported on this device -->
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
@@ -233,11 +238,16 @@
      <bool name="config_wifi_framework_use_single_radio_chain_scan_results_network_selection">true</bool>
 
     <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
-     <bool name="config_wifi_softap_acs_supported">false</bool>
+     <bool name="config_wifi_softap_acs_supported">true</bool>
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
      <bool name="skip_restoring_network_selection">false</bool>
+
+    <!-- Wlan configs -->
+     <string name="config_qualified_networks_service_package">vendor.qti.iwlan</string>
+     <string name="config_wlan_data_service_package">vendor.qti.iwlan</string>
+     <string name="config_wlan_network_service_package">vendor.qti.iwlan</string>
 
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
