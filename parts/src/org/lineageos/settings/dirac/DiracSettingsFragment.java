@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2018,2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -58,6 +58,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         final ActionBar actionBar = getActivity().getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        DiracUtils.initialize(getActivity());
         boolean enhancerEnabled = DiracUtils.isDiracEnabled();
 
         mHeadsetType = (ListPreference) findPreference(PREF_HEADSET);
@@ -72,6 +73,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         boolean hifiEnable = DiracUtils.getHifiMode();
         mHeadsetType.setEnabled(!hifiEnable && enhancerEnabled);
         mPreset.setEnabled(!hifiEnable && enhancerEnabled);
+        mHifi.setEnabled(enhancerEnabled);
     }
 
     @Override
@@ -130,10 +132,13 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         mSwitchBar.setActivated(isChecked);
 
         DiracUtils.setMusic(isChecked);
+        mHifi.setEnabled(isChecked);
+        mHeadsetType.setEnabled(isChecked);
+        mPreset.setEnabled(isChecked);
 
-        if (!DiracUtils.getHifiMode()) {
-            mHeadsetType.setEnabled(isChecked);
-            mPreset.setEnabled(isChecked);
+        if (!isChecked){
+            mHifi.setChecked(false);
+            DiracUtils.setHifiMode(0);
         }
     }
 
