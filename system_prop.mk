@@ -18,7 +18,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # DPM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.vendor.dpm.feature=9
+    persist.vendor.dpm.feature=1
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -34,8 +34,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
     media.settings.xml=/system/etc/media_profiles_vendor.xml \
-    vendor.mm.enable.qcom_parser=63963135
+    vendor.mm.enable.qcom_parser=131071999
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -43,7 +44,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.netflix.bsp_rev=Q855-16947-1
+    ro.netflix.bsp_rev=Q8250-19134-1
 
 # Netmgr
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -53,7 +54,15 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Radio
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.telephony.default_network=22,22
+    DEVICE_PROVISIONED=1 \
+    rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
+    ril.subscription.types=NV,RUIM \
+    ro.telephony.default_network=22,22 \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.radio.redir_party_num=1 \
+    persist.vendor.radio.report_codec=1 \
+    telephony.lteOnCdmaDevice=1
 
 # RCS
 PRODUCT_PROPERTY_OVERRIDES += \
