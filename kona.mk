@@ -172,6 +172,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
+# Wifi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/hostapd:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin/hw/hostapd
+
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
