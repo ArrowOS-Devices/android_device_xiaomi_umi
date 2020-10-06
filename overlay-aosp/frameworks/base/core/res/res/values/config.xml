@@ -29,4 +29,7 @@
     <!-- Display has physical cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
 
+    <!-- Flag specifying whether pocked mode is available on device -->
+    <bool name="config_pocketModeSupported">false</bool>
+
 </resources>
