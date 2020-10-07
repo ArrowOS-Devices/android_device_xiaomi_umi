@@ -1102,4 +1102,7 @@
         <item>"bt-pan"</item>
     </string-array>
 
+    <!--  Whether Multiuser UI should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
+
 </resources>
