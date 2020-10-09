@@ -33,6 +33,8 @@ $(call inherit-product-if-exists, vendor/xiaomi/cmi/cmi-vendor.mk)
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
 
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
