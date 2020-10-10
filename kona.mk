@@ -54,6 +54,7 @@ AB_OTA_UPDATER := false
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
+    libaacwrapper \
     tinymix
 
 PRODUCT_COPY_FILES += \
