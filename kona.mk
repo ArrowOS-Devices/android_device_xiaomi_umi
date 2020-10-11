@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     Tag \
     SecureElement
 
+# OTA
+PRODUCT_HOST_PACKAGES += \
+    signapk
+
 # Overlays
 PRODUCT_PACKAGES += \
     XiaomiBluetooth \
