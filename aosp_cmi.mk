@@ -33,7 +33,7 @@ PRODUCT_MODEL := MI 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="qti/qssi/qssi:10/QKQ1.191117.002/V12.0.4.0.QJACNXM:user/release-keys" \
+    PRIVATE_BUILD_DESC="Xiaomi/cmi/cmi:10/QKQ1.191117.002/V12.0.6.0.QJACNXM:user/release-keys" \
     PRODUCT_NAME="cmi" \
     TARGET_DEVICE="cmi"
 
