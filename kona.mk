@@ -200,6 +200,13 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiver \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.deprecated@1.0 \
+    librmnetctl
+
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
