@@ -69,6 +69,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rcs.supported=1
 
+# Screen Density
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=420
+
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.enable.mag_filter=true
