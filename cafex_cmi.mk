@@ -23,10 +23,10 @@ TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, device/xiaomi/cmi/kona.mk)
 
 # Inherit common PE configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/extended/config/common.mk)
 
 # Override build properties
-PRODUCT_NAME := aosp_cmi
+PRODUCT_NAME := cafex_cmi
 PRODUCT_DEVICE := cmi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 10 Pro

@@ -36,6 +36,12 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/cmi/cmi-vendor.mk)
 
+# Dependencies
+$(call inherit-product-if-exists, device/qcom/common/telephony-diag/qti-telephony-diag.mk)
+
+# Radio
+$(call inherit-product-if-exists, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
+
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
 
@@ -79,7 +85,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti
+    libbluetooth_qti
 
 # Display
 PRODUCT_PACKAGES += \
@@ -180,6 +186,22 @@ PRODUCT_COPY_FILES += \
 # PowerShare
 #PRODUCT_PACKAGES += \
 #    lineage.powershare@1.0-service.xiaomi_kona
+
+# QPerf
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
+PRODUCT_PACKAGES += \
+    libtflite
+
+# QTI common
+-include vendor/qcom/common/perf/perf-vendor.mk
+-include vendor/qcom/common/telephony/telephony-vendor.mk
+-include vendor/qcom/common/telephony-diag/telephony-diag-vendor.mk
+-include vendor/qcom/common/audio/audio-vendor.mk
+-include vendor/qcom/common/bt/bt-vendor.mk
+-include vendor/qcom/common/display/display-vendor.mk
 
 # Ramdisk
 PRODUCT_PACKAGES += \

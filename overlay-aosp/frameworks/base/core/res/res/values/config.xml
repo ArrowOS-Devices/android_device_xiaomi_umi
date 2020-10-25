@@ -48,4 +48,7 @@
     <!-- Should we filter any display modes which are unampped? -->
     <bool name="config_filterDisplayModes">true</bool>
 
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_needCustomFODView">true</bool>
+
 </resources>
