@@ -25,6 +25,9 @@ $(call inherit-product, device/xiaomi/cmi/kona.mk)
 # Inherit common PE configuration
 $(call inherit-product, vendor/extended/config/common.mk)
 
+$(call inherit-product, vendor/google/pixel/config.mk)
+$(call inherit-product, vendor/google/gms/config.mk)
+
 # Override build properties
 PRODUCT_NAME := cafex_cmi
 PRODUCT_DEVICE := cmi
