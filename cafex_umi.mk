@@ -20,7 +20,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
 # Inherit device configuration
-$(call inherit-product, device/xiaomi/cmi/kona.mk)
+$(call inherit-product, device/xiaomi/umi/kona.mk)
 
 # Inherit common PE configuration
 $(call inherit-product, vendor/extended/config/common.mk)
@@ -29,10 +29,10 @@ $(call inherit-product, vendor/google/pixel/config.mk)
 $(call inherit-product, vendor/google/gms/config.mk)
 
 # Override build properties
-PRODUCT_NAME := cafex_cmi
-PRODUCT_DEVICE := cmi
+PRODUCT_NAME := cafex_umi
+PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 10 Pro
+PRODUCT_MODEL := MI 10
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

@@ -23,7 +23,7 @@
 
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
-DEVICE_PATH := device/xiaomi/cmi
+DEVICE_PATH := device/xiaomi/umi
 
 # Architecture
 TARGET_ARCH := arm64
@@ -45,7 +45,7 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := cmi
+TARGET_OTA_ASSERT_DEVICE := umi
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true

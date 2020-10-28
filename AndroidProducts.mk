@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cafex_cmi.mk
+    $(LOCAL_DIR)/cafex_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    cafex_cmi-user \
-    cafex_cmi-userdebug \
-    cafex_cmi-eng
+    cafex_umi-user \
+    cafex_umi-userdebug \
+    cafex_umi-eng
