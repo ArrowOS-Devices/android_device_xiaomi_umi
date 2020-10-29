@@ -36,11 +36,19 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
 
+#
+# CAF
 # Dependencies
 $(call inherit-product-if-exists, device/qcom/common/telephony-diag/qti-telephony-diag.mk)
 
 # Radio
 $(call inherit-product-if-exists, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
+
+# Include display HAL makefiles.
+-include hardware/qcom/display/config/display-board.mk
+-include hardware/qcom/display/config/display-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
 
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
