@@ -36,9 +36,9 @@ PRODUCT_MODEL := MI 10
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RD1A.200810.020 6792687 release-keys" \
+    PRIVATE_BUILD_DISC="coral-user 11 RP1A.201005.004 6782484 release-keys"
 
-BUILD_FINGERPRINT := google/redfin/redfin:11/RD1A.200810.020/6792687:user/release-keys
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
