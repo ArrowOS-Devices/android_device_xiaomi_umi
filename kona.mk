@@ -217,7 +217,8 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.recovery.qcom.rc
+    init.recovery.qcom.rc \
+    init.safailnet.rc
 
 # Ril
 PRODUCT_PACKAGES += \
