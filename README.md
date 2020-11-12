@@ -1,4 +1,4 @@
-Copyright (C) 2020 The PixelExperience Project
+Copyright (C) 2020 Project 404
 
 Device configuration for Xiaomi MI 10
 =========================================

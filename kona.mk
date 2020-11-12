@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The PixelExperience Project
+# Copyright (C) 2020 Project 404
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,20 +36,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
 
-#
-# CAF
-# Dependencies
-$(call inherit-product-if-exists, device/qcom/common/telephony-diag/qti-telephony-diag.mk)
-
-# Radio
-$(call inherit-product-if-exists, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
-
-# Include display HAL makefiles.
--include hardware/qcom/display/config/display-board.mk
--include hardware/qcom/display/config/display-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
-
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system_prop.mk
 
@@ -68,7 +54,7 @@ TARGET_BOARD_PLATFORM := kona
 include device/qcom/common/overlay/qti-overlay.mk
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-404
 
 # A/B
 AB_OTA_UPDATER := false
@@ -135,10 +121,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl.kona
 
-# Livedisplay
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_PACKAGES += \
     libmediaplayerservice
@@ -199,31 +181,15 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #    lineage.powershare@1.0-service.xiaomi_kona
 
-# QPerf
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
-
-PRODUCT_PACKAGES += \
-    libtflite
-
 # QTI common
--include vendor/qcom/common/perf/perf-vendor.mk
--include vendor/qcom/common/telephony/telephony-vendor.mk
--include vendor/qcom/common/telephony-diag/telephony-diag-vendor.mk
--include vendor/qcom/common/audio/audio-vendor.mk
--include vendor/qcom/common/bt/bt-vendor.mk
--include vendor/qcom/common/display/display-vendor.mk
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
 
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.safailnet.rc
-
-# Ril
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4
 
 # Telephony
 PRODUCT_PACKAGES += \
