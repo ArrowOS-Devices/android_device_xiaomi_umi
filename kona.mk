@@ -150,6 +150,7 @@ PRODUCT_HOST_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    TetheringConfigOverlay \
     WifiOverlay \
     XiaomiBluetooth \
     XiaomiFrameworks \
