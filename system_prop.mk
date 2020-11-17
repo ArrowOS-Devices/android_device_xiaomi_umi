@@ -87,14 +87,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.enable.mag_filter=true
 
-# Vendor
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.va_aosp.support=1
-
 # Volume steps
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.config.media_vol_steps=15
-
-# Zygote
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.device_config.runtime_native.usap_pool_enabled=true
