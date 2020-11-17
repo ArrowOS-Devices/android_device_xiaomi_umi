@@ -72,25 +72,11 @@ BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
-# Bluetooth
-TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
-
 # Bootloader
-TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := kona
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
-
-# Dex
-ifeq ($(HOST_OS),linux)
-    ifneq ($(TARGET_BUILD_VARIANT),eng)
-        ifeq ($(WITH_DEXPREOPT),)
-            WITH_DEXPREOPT := true
-            WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-        endif
-    endif
-endif
 
 # Display
 TARGET_USES_HWC2 := true
@@ -148,9 +134,6 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 # LMKD
 TARGET_LMKD_STATS_LOG := true
 
-# Platform
-BOARD_USES_QCOM_HARDWARE := true
-
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_USES_PRODUCTIMAGE := true
@@ -175,7 +158,6 @@ TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS := true
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
-BUILD_WITHOUT_VENDOR := true
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
@@ -196,9 +178,6 @@ include device/qcom/sepolicy/SEPolicy.mk
 
 # Screen
 TARGET_SCREEN_DENSITY := 420
-
-# Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
