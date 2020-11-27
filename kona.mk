@@ -185,7 +185,8 @@ PRODUCT_PACKAGES += \
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
-    perf
+    perf \
+    wfd
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -216,10 +217,6 @@ PRODUCT_BOOT_JARS += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0
-
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
