@@ -50,9 +50,6 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 # Board
 TARGET_BOARD_PLATFORM := kona
 
-# Overlays
-include device/qcom/common/overlay/qti-overlay.mk
-
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-404
 
