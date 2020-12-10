@@ -22,7 +22,6 @@
     android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
@@ -60,10 +59,6 @@
                  android:permission="XiaomiDozeService">
         </service>
 
-        <service android:name=".fod.FodService"
-                 android:permission="FodService">
-        </service>
-
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
@@ -84,29 +79,6 @@
                 android:name="com.android.settings.summary"
                 android:resource="@string/dt2w_enable_summary" />
         </activity>
-
-        <activity
-            android:name=".thermal.ThermalActivity"
-            android:label="@string/thermal_title"
-            android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.battery" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/thermal_summary" />
-            <meta-data
-                android:name="com.android.settings.order"
-                android:value="1" />
-        </activity>
-
-        <service
-            android:name=".thermal.ThermalService"
-            android:permission="ThermalService">
-        </service>
 
     </application>
 </manifest>
