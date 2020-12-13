@@ -22,34 +22,8 @@
     <!-- Shows the required view for in-display fingerprint -->
     <bool name="config_supportsInDisplayFingerprint">true</bool>
 
-    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not
-         specified -->
-    <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers19/com.breel.wallpapers19.doodle.wallpaper.variations.DoodleWallpaperV1</string>
-
     <!-- Display has physical cutout -->
     <bool name="config_physicalDisplayCutout">true</bool>
-
-    <!-- Flag specifying whether pocked mode is available on device -->
-    <bool name="config_pocketModeSupported">false</bool>
-
-    <!-- Display mode remapping table.
-         If the mode names returned by the backend do not match
-         the predefined and translated strings in the Settings
-         app, they can be remapped here. The format is
-         "oldname:newname", one per entry. -->
-    <string-array name="config_displayModeMappings" translatable="false">
-        <item>none:standard</item>
-        <item>smart_eyedefault:reading</item>
-        <item>GM_1:saturated</item>
-        <item>hal_srgb:srgb</item>
-        <item>smart_MC:dci_p3</item>
-    </string-array>
-
-    <!-- Should we filter any display modes which are unampped? -->
-    <bool name="config_filterDisplayModes">true</bool>
-
-    <!-- Shows the required view for in-display fingerprint -->
-    <bool name="config_needCustomFODView">true</bool>
 
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">true</bool>
