@@ -54,6 +54,7 @@ system_ext/lib64/libdpmtcm.so
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # Qualcomm MSM Interface
 system_ext/etc/permissions/qti_libpermissions.xml
@@ -90,6 +91,7 @@ system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
 system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
 system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
 system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
+system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar
 system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
