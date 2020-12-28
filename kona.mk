@@ -36,9 +36,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
 
--include $(LOCAL_PATH)/product_prop.mk
--include $(LOCAL_PATH)/system_prop.mk
-
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Shipping API level
