@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@2.0
 
+# Configstore
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
