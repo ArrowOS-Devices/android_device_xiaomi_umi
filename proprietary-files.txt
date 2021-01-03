@@ -1,7 +1,3 @@
-# ANT+
-system_ext/lib/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-
 # Audio
 vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so
 vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/30/lib/soundfx/libvolumelistener.so
@@ -52,9 +48,10 @@ system_ext/lib64/libdpmtcm.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 
 # HotwordEnrollment
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|0492cd3db2e253e23b78e56fa8ea7b3a4b15edeb
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 
 # Qualcomm MSM Interface
 system_ext/etc/permissions/qti_libpermissions.xml
