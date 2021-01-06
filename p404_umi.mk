@@ -26,7 +26,7 @@ $(call inherit-product, device/xiaomi/umi/kona.mk)
 $(call inherit-product, vendor/404/configs/common.mk)
 
 $(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/google/gms/config.mk)
+$(call inherit-product, vendor/google/gms/gapps.mk)
 
 # Override build properties
 PRODUCT_NAME := p404_umi
