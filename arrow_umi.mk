@@ -31,9 +31,9 @@ DEVICE_MAINTAINER := ChaptSand
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DISC="coral-user 11 RP1A.201105.002 6869500 release-keys"
+    PRIVATE_BUILD_DISC="coral-user 11 RQ1A.210105.003 7005429 release-keys"
 
-BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RQ1A.210105.003/7005429:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
