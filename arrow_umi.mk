@@ -14,26 +14,21 @@
 # limitations under the License.
 #
 
-# Include 404 common configuration
-TARGET_BOOT_ANIMATION_RES := 1080
-
-TARGET_GAPPS_ARCH := arm64
-
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/umi/kona.mk)
 
-# Inherit common 404 configuration
-$(call inherit-product, vendor/404/configs/common.mk)
+# Inherit some common Arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
-$(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/google/gms/gapps.mk)
-
-# Override build properties
-PRODUCT_NAME := p404_umi
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := arrow_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 10
 PRODUCT_MANUFACTURER := Xiaomi
+DEVICE_MAINTAINER := ChaptSand
+
+PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DISC="coral-user 11 RP1A.201105.002 6869500 release-keys"

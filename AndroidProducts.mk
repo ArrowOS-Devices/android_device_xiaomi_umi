@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_umi.mk
+    $(LOCAL_DIR)/arrow_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    p404_umi-user \
-    p404_umi-userdebug \
-    p404_umi-eng
+    arrow_umi-user \
+    arrow_umi-userdebug \
+    arrow_umi-eng
