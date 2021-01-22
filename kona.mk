@@ -74,8 +74,13 @@ PRODUCT_PACKAGES += \
     BluetoothQti
     
 # Camera
+ifeq ($(ARROW_GAPPS), true)
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt
+else
 PRODUCT_PACKAGES += \
     Snap
+endif
     
 # Configstore
 PRODUCT_PACKAGES += \
