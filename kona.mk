@@ -73,6 +73,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BluetoothQti
     
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+    
 # Configstore
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0
