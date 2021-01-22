@@ -2,5 +2,9 @@
   {
     "repository": "android_vendor_xiaomi_umi",
     "target_path": "vendor/xiaomi/umi"
+  },
+  {
+    "repository": "android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt"
   }
 ]
