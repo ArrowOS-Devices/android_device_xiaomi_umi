@@ -82,25 +82,9 @@ PRODUCT_PACKAGES += \
     Snap
 endif
     
-# Configstore
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.capabilityconfigstore@1.0
-
 # Cryptfs
 PRODUCT_PACKAGES += \
-    libcryptfs_hw \
-    vendor.qti.hardware.cryptfshw@1.0
-
-# Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libgralloc.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libvulkan \
-    vendor.display.config@1.0 \
-    vendor.display.config@2.0 \
-    vendor.qti.hardware.display.composer@3.0
+    libcryptfs_hw
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -128,10 +112,6 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
-
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl.kona
 
 # Media
 PRODUCT_PACKAGES += \
