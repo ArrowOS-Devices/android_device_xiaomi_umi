@@ -70,10 +70,7 @@
 
     <!-- Is the device capable of hot swapping an ICC Card -->
      <bool name="config_hotswapCapable">true</bool>
-
-    <!-- Should the pinner service pin the Camera application? -->
-     <bool name="config_pinnerCameraApp">true</bool>
-
+     
     <!-- Should the pinner service pin the Home application? -->
      <bool name="config_pinnerHomeApp">true</bool>
 
