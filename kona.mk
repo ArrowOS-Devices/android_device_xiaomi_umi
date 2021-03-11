@@ -57,8 +57,7 @@ AB_OTA_UPDATER := false
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     libaacwrapper \
-    libfmq \
-    tinymix
+    libfmq
 
 PRODUCT_PACKAGES += \
     libaudiohal
