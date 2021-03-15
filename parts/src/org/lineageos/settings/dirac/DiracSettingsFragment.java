@@ -17,10 +17,6 @@
 package org.lineageos.settings.dirac;
 
 import android.app.ActionBar;
-import android.app.Activity;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -29,10 +25,10 @@ import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
-import androidx.preference.Preference;
+
 import androidx.preference.ListPreference;
+import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 
@@ -73,12 +69,11 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         boolean hifiEnable = DiracUtils.getHifiMode();
         mHeadsetType.setEnabled(!hifiEnable && enhancerEnabled);
         mPreset.setEnabled(!hifiEnable && enhancerEnabled);
-        mHifi.setEnabled(enhancerEnabled);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
         final View view = LayoutInflater.from(getContext()).inflate(R.layout.dirac,
                 container, false);
         ((ViewGroup) view).addView(super.onCreateView(inflater, container, savedInstanceState));
@@ -122,7 +117,8 @@ public class DiracSettingsFragment extends PreferenceFragment implements
             case PREF_PRESET:
                 DiracUtils.setLevel((String) newValue);
                 return true;
-            default: return false;
+            default:
+                return false;
         }
     }
 
@@ -132,13 +128,10 @@ public class DiracSettingsFragment extends PreferenceFragment implements
         mSwitchBar.setActivated(isChecked);
 
         DiracUtils.setMusic(isChecked);
-        mHifi.setEnabled(isChecked);
-        mHeadsetType.setEnabled(isChecked);
-        mPreset.setEnabled(isChecked);
 
-        if (!isChecked){
-            mHifi.setChecked(false);
-            DiracUtils.setHifiMode(0);
+        if (!DiracUtils.getHifiMode()) {
+            mHeadsetType.setEnabled(isChecked);
+            mPreset.setEnabled(isChecked);
         }
     }
 
