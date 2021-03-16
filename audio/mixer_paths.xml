@@ -2733,15 +2733,18 @@
     </path>
 
     <path name="ultrasound-proximity-output headphones">
+        <ctl name="RX_MACRO RX5 MUX" value="AIF2_PB" />
     </path>
 
     <path name="ultrasound-proximity-output headset">
+        <ctl name="RX_MACRO RX5 MUX" value="AIF2_PB" />
     </path>
 
     <path name="ultrasound-proximity-output speaker">
     </path>
 
     <path name="ultrasound-proximity-output speaker-and-headphones">
+        <ctl name="RX_MACRO RX5 MUX" value="AIF2_PB" />
     </path>
 
     <path name="ultrasound-proximity-input">
@@ -3187,6 +3190,8 @@
 
     <path name="voice-rec-mic">
         <path name="handset-mic" />
+        <ctl name="TX_DEC1 Volume" value="92" />
+        <ctl name="TX_DEC4 Volume" value="92" />
     </path>
 
     <path name="camcorder-mic">
