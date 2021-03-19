@@ -130,7 +130,6 @@ vendor/lib/modules/audio_snd_event.ko:product/vendor_overlay/30/lib/modules/audi
 vendor/lib/modules/audio_stub.ko:product/vendor_overlay/30/lib/modules/audio_stub.ko
 vendor/lib/modules/audio_swr_ctrl.ko:product/vendor_overlay/30/lib/modules/audio_swr_ctrl.ko
 vendor/lib/modules/audio_swr.ko:product/vendor_overlay/30/lib/modules/audio_swr.ko
-vendor/lib/modules/audio_tfa98xx.ko:product/vendor_overlay/30/lib/modules/audio_tfa98xx.ko
 vendor/lib/modules/audio_tx_macro.ko:product/vendor_overlay/30/lib/modules/audio_tx_macro.ko
 vendor/lib/modules/audio_usf.ko:product/vendor_overlay/30/lib/modules/audio_usf.ko
 vendor/lib/modules/audio_va_macro.ko:product/vendor_overlay/30/lib/modules/audio_va_macro.ko
