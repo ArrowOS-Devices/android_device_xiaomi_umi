@@ -118,6 +118,13 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+    
+PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
+    
 # Media
 PRODUCT_PACKAGES += \
     libmediaplayerservice
