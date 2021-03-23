@@ -141,7 +141,11 @@ PRODUCT_SOONG_NAMESPACES += \
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
-
+    
+# NFC
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/libnfc-nci.conf
+    
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
