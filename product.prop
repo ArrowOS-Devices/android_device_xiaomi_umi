@@ -2,9 +2,23 @@
 ro.secure=0
 ro.adb.secure=0
 
+# Audio
+af.fast_track_multiplier=1
+audio.offload.video=true
+audio.deep_buffer.media=true
+audio.sys.noisy.broadcast.delay=500
+audio.sys.mute.latency.factor=2
+audio.sys.routing.latency=0
+audio.offload.min.duration.secs=30
+audio.sys.offload.pstimeout.secs=3
+debug.stagefright.omx_default_rank.sw-audio=16
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+
 # Blur
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
+persist.sys.sf.disable_blurs=1
 
 # Incremental FS
 ro.incremental.enable=1
@@ -12,18 +26,9 @@ ro.incremental.enable=1
 # LMKD
 ro.config.low_ram = false
 
-# Media
-debug.stagefright.omx_default_rank.sw-audio=16
-
 # Priv-app permission
 ro.control_privapp_permissions=log
 
 # Recorder
 persist.vendor.audio.fluence.voicerec=true
 persist.vendor.audio.fluence.audiorec=true
-
-# Telephony
-ro.telephony.default_network=33,22
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
